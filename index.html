@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/apple.png"image/x-icon">
+
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +19,12 @@
     <div id="vanta"></div>
 
     <header>
+        <img src="assets/img/h.webp" alt="Icon">
         <nav>
+            <button id="btn-mobile" onclick="menu()">
+                <span id="hamburger"></span>
+            </button>
+
             <ul>
                 <li><a id="register" onclick="change('register')">Cadastrar-se</a></li>
                 <li><a id="reserve" onclick="change('reserve')">Reservar sala</a></li>
