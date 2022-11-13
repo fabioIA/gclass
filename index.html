@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap" rel="stylesheet">
+
+    <title>Menu</title>
+</head>
+<body>
+    <div id="vanta"></div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a id="register" onclick="change('register')">Cadastrar-se</a></li>
+                <li><a id="reserve" onclick="change('reserve')">Reservar sala</a></li>
+                <li><a id="available" onclick="change('available')">Salas disponíveis</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="frame">
+            <iframe id="ifra" src=""></iframe>  
+        </div>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.rings.min.js"></script>
+    
+    <script>
+        VANTA.RINGS({
+            el: "#vanta",
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00
+        })
+    </script>
+</body>
+</html>
