@@ -50,6 +50,11 @@ li > a {
     display: block;
 }
 
+#register.set, #available.set, #reserve.set {
+    border-bottom: 2px solid white;
+    color: aliceblue;
+}
+
 li:hover {
     border-bottom: 1px solid #fff;
 }

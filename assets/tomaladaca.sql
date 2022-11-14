@@ -4,7 +4,7 @@ USE tomaladaca;
 
 CREATE TABLE professor(
 	cpf char(14) PRIMARY KEY,
-    telefone char(14) UNIQUE,
+    telefone char(15) UNIQUE,
     nome_professor varchar(80),
     senha varchar(40)
 );

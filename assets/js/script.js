@@ -2,17 +2,6 @@ const ifra = document.getElementById("ifra");
 const nav = document.querySelector('nav');
 let k = '';
 
-function styles(key) {
-    ifra.classList.remove('row');
-    document.getElementById(key).style.borderBottom = '1px solid #101010';
-    document.getElementById(key).style.color = 'rgb(170, 170, 170)';
-}
-
-function replace(key) {
-    document.getElementById(key).style.borderBottom = '2px solid white';
-    document.getElementById(key).style.color = 'aliceblue';
-}
-
 function menu() {
     nav.classList.toggle('active');
 }
@@ -24,24 +13,39 @@ function change(key) {
         case 'reserve':
             ifra.src = "assets/php/reservation.php"; 
     
-            if (k !== '') styles(k);
-            replace('reserve');
+            if (k !== '') {
+                ifra.classList.remove('row');
+                document.getElementById(k).classList.remove('set');
+            }
+
+            document.getElementById(key).classList.add('set');
+
             setTimeout(() => ifra.classList.add('row'), 800);
         break;
 
         case 'available':
             ifra.src= "assets/php/available.php"; 
             
-            if (k !== '') styles(k);
-            replace('available');
+            if (k !== '') {
+                ifra.classList.remove('row');
+                document.getElementById(k).classList.remove('set');
+            }
+
+            document.getElementById(key).classList.add('set');
+
             setTimeout(() => ifra.classList.add('row'), 800);
         break;
         
         case 'register':
             ifra.src = "assets/php/register.php"; 
             
-            if (k !== '') styles(k);
-            replace('register');
+            if (k !== '') {
+                ifra.classList.remove('row');
+                document.getElementById(k).classList.remove('set');
+            }
+
+            document.getElementById(key).classList.add('set');
+
             setTimeout(() => ifra.classList.add('row'), 800);
         break;
 

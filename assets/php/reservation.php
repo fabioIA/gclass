@@ -54,7 +54,7 @@
         <fieldset>
             <form action="reservation.php" method="post">
                 <div class="box">
-                    <input type="tel" name="cpf" id="cpf" class="Input" maxlength="14" oninput="mascaracpf(this)" required>
+                    <input type="tel" name="cpf" id="cpf" class="Input" autocomplete="off" maxlength="14" oninput="mascaracpf(this)" required>
                     <label for="cpf" class="labelInput">CPF</label>
                 </div>
 

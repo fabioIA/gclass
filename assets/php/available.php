@@ -11,7 +11,7 @@
         echo "<tr><td>" . $tupla['cod_sala'] . "</td></tr>";
 
     }
-
+    
 ?>
 
 <!DOCTYPE html>

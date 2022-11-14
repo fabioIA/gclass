@@ -40,17 +40,17 @@
         <fieldset>
             <form action="register.php" method="post">
                 <div class="box">
-                    <input type="text" name="nome" id="nome" class="Input" maxlength="80" required>
+                    <input type="text" name="nome" id="nome" class="Input" autocomplete="off" maxlength="80" required>
                     <label for="nome" class="labelInput">Nome</label>
                 </div>
 
                 <div class="box">
-                    <input type="tel" name="cpf" id="cpf" class="Input" maxlength="14" oninput="mascaracpf(this)" required>
+                    <input type="tel" name="cpf" id="cpf" class="Input" autocomplete="off" maxlength="14" oninput="mascaracpf(this)" required>
                     <label for="cpf" class="labelInput">CPF</label>
                 </div>
 
                 <div class="box">
-                    <input type="tel" name="telefone" id="telefone" class="Input" maxlength="15" oninput="handlePhone(event)" required>
+                    <input type="tel" name="telefone" id="telefone" class="Input" autocomplete="off" maxlength="15" oninput="handlePhone(event)" required>
                     <label for="telefone" class="labelInput">Telefone</label>
                 </div class="box">
 

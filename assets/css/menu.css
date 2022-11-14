@@ -61,7 +61,7 @@
         margin-top: 6px;
         transition: .3s;
     }
-
+    
     nav.active #hamburger {
         border-top-color: transparent;
     }
